@@ -15,7 +15,7 @@
 // a /pugnodisemi/. Le cache sono una per sito e non una per indirizzo: con il
 // nome di prima, la pulizia di /spaghettiwestern/ si sarebbe portata via anche
 // questa.
-const VERSIONE = "pugnodisemi-v8";
+const VERSIONE = "pugnodisemi-v9";
 
 const RISORSE = [
   "./arte/luoghi.js",
