@@ -1,22 +1,31 @@
 # Per un pugno di semi
 
-*(all'indirizzo `/spaghettiwestern/`)*
+*(all'indirizzo `/Pugnodisemi/`, il nome del repository)*
 
-Una copia di **Ultimo raccolto**, presa alla versione **M7.18.41** (PR #92), su
-cui provare un cambio radicale di ambientazione: il western all'italiana.
-L'originale resta fermo e giocabile a `/ultimo-raccolto/`; questa vive a
-`/spaghettiwestern/`, sullo stesso sito, e le due non si toccano:
+Una copia di **Ultimo raccolto**, presa alla versione **M7.18.41** (PR #92 di
+`mxxcloud.github.io`), su cui provare un cambio radicale di ambientazione: il
+western all'italiana. L'originale resta fermo e giocabile a
+`/ultimo-raccolto/`.
+
+Fino a W0.8 viveva nella cartella `spaghettiwestern/` del repository del sito;
+da lì è passato in questo repository, con tutta la sua storia, per lavorare
+sui due giochi in modo del tutto separato. È servito come progetto di GitHub
+Pages, quindi sta sullo stesso sito dell'originale, e le due non si toccano:
 - **salvataggi separati**: le caselle, il volume e il codice della sincronia
   stanno sotto il prefisso `spaghettiwestern/` invece di `ultimo-raccolto/`.
-  L'archivio del browser è uno per sito, non per indirizzo, quindi con lo
-  stesso prefisso le due si sarebbero lette le partite a vicenda;
+  L'archivio del browser è uno per sito, non per indirizzo: con lo stesso
+  prefisso le due si sarebbero lette le partite a vicenda. Il prefisso è
+  rimasto quello di prima anche col trasloco, e per questo le partite salvate
+  a `/spaghettiwestern/` si ritrovano qui;
 - **cache separate**: il service worker tiene la sua copia offline sotto
-  `spaghettiwestern-v…` e cancella solo le sue vecchie;
+  `pugnodisemi-v…` e cancella solo le sue vecchie. Il prefisso è cambiato col
+  trasloco perché anche le cache sono una per sito, e la pulizia del vecchio
+  indirizzo cancella quelle `spaghettiwestern-…`;
 - **versioni sue**: si riparte da `W0.1`.
 
 Come l'originale non ha server né dipendenze: è HTML, CSS e JavaScript serviti
-così come sono. Tutto quello che segue è la storia di Ultimo raccolto fino al
-punto della copia.
+così come sono. I collaudi si lanciano con `npm test`. Tutto quello che segue
+dopo W0.1 è la storia di Ultimo raccolto fino al punto della copia.
 
 ## W0.8 — la stalla per l'autunno e l'inverno
 

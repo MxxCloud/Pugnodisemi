@@ -11,7 +11,11 @@
 // dimenticato non darebbe errore online, e si scoprirebbe solo la prima volta
 // che qualcuno prova a giocare in treno.
 
-const VERSIONE = "spaghettiwestern-v8";
+// Il prefisso è "pugnodisemi-" da quando il gioco ha un repository suo e vive
+// a /pugnodisemi/. Le cache sono una per sito e non una per indirizzo: con il
+// nome di prima, la pulizia di /spaghettiwestern/ si sarebbe portata via anche
+// questa.
+const VERSIONE = "pugnodisemi-v8";
 
 const RISORSE = [
   "./arte/luoghi.js",
@@ -118,7 +122,7 @@ self.addEventListener("activate", (evento) => {
     caches
       .keys()
       .then((nomi) =>
-        Promise.all(nomi.filter((nome) => nome.startsWith("spaghettiwestern-") && nome !== VERSIONE).map((nome) => caches.delete(nome)))
+        Promise.all(nomi.filter((nome) => nome.startsWith("pugnodisemi-") && nome !== VERSIONE).map((nome) => caches.delete(nome)))
       )
       .then(() => self.clients.claim())
   );

@@ -636,15 +636,16 @@ test('sprite nuovi rettangolari, con soli colori della tavolozza',()=>{
   }
 });
 test('service worker conserva le cache delle altre applicazioni',async()=>{
-  // Spaghetti western vive accanto a Ultimo raccolto sullo stesso sito, e le
-  // cache sono una per sito: si cancellano solo le sue vecchie.
+  // Per un pugno di semi vive accanto a Ultimo raccolto sullo stesso sito, e
+  // le cache sono una per sito: si cancellano solo le sue vecchie. Neanche
+  // quelle di /spaghettiwestern/, dove stava prima: le pulisce il suo worker.
   const handlers={},deleted=[];let completion;
   const source=readFileSync(new URL('../sw.js',import.meta.url),'utf8');
   const versione=source.match(/const VERSIONE = "([^"]+)"/)[1];
-  assert.match(versione,/^spaghettiwestern-v\d+$/);
-  runInNewContext(source,{self:{addEventListener:(k,v)=>handlers[k]=v,clients:{claim:async()=>{}}},caches:{keys:async()=>['spaghettiwestern-v0',versione,'ultimo-raccolto-v103','budget-futuro-v5'],delete:async k=>{deleted.push(k);return true;}}});
+  assert.match(versione,/^pugnodisemi-v\d+$/);
+  runInNewContext(source,{self:{addEventListener:(k,v)=>handlers[k]=v,clients:{claim:async()=>{}}},caches:{keys:async()=>['pugnodisemi-v0','spaghettiwestern-v8',versione,'ultimo-raccolto-v103','budget-futuro-v5'],delete:async k=>{deleted.push(k);return true;}}});
   handlers.activate({waitUntil:p=>completion=p});await completion;
-  assert.deepEqual(deleted,['spaghettiwestern-v0']);
+  assert.deepEqual(deleted,['pugnodisemi-v0']);
 });
 test('spaghetti western non tocca i salvataggi di ultimo raccolto: le sue chiavi hanno un prefisso suo',()=>{
   const leggi=(f)=>readFileSync(new URL('../'+f,import.meta.url),'utf8');
