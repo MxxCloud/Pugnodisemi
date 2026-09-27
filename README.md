@@ -27,6 +27,40 @@ Come l'originale non ha server né dipendenze: è HTML, CSS e JavaScript serviti
 così come sono. I collaudi si lanciano con `npm test`. Tutto quello che segue
 dopo W0.1 è la storia di Ultimo raccolto fino al punto della copia.
 
+## W0.9 — la canicola e i parassiti (da Ultimo raccolto M7.18.42)
+
+Arriva qui la prima novità di Ultimo raccolto uscita dopo la copia: i due
+imprevisti dell'orto di **M7.18.42**, con le stesse regole. Nel deserto la
+canicola è di casa.
+
+**La canicola.** Ogni estate uno dei giorni dal secondo al quarto è di
+canicola, sempre lo stesso per la stessa valle e lo stesso anno.
+- Si sa il giorno prima: nell'angolo del meteo c'è «DOMANI CANICOLA» in
+  rosso. Il giorno stesso c'è «CANICOLA: INNAFFIA TUTTO», e al mattino
+  «oggi canicola: chi non beve, secca».
+- La notte che chiude la canicola **ogni pianta spuntata che non è stata
+  innaffiata quel giorno secca subito**, anche se il giorno prima non aveva
+  sete. Il tasto davanti lo dice: «canicola: senz'acqua stanotte secca».
+- Per la sete conta come un giorno arido: vale due.
+
+**I parassiti.** In primavera, d'estate e d'autunno, **una notte su cinque
+in media una pianta dell'orto si infesta**: una sola, per quante piante ci
+siano.
+- Si vede dai **puntini neri** sulle foglie, e il tasto dice «parassiti:
+  estirpa o spargi cenere».
+- Ogni notte il contagio passa alle quattro vicine, e la pianta infestata da
+  una notte muore: c'è un giorno intero per salvarla, e il tasto avvisa
+  quando «stanotte muore».
+- **Rimedi:** estirparla con la **X**, oppure **spargerci la cenere**, che
+  toglie i parassiti e protegge la pianta fino al raccolto (anche sulla terra
+  già grassa). La pollina concima ma non cura. La pianta matura si può anche
+  raccogliere subito.
+- D'inverno il gelo li ferma; a primavera ripartono da dove erano.
+- Al mattino si legge: «i parassiti sono nell'orto», «i parassiti si
+  allargano», «i parassiti hanno ucciso delle piante».
+
+I parassiti e la protezione della cenere si salvano con la partita.
+
 ## W0.8 — la stalla per l'autunno e l'inverno
 
 Il recinto è della primavera e dell'estate. **D'autunno e d'inverno i cavalli
